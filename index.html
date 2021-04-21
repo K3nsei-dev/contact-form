@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./glass.css">
+    <title>Contact Form</title>
+</head>
+<body>
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  id="form-container"
+  action="https://formspree.io/f/mknkgpoy"
+  method="POST"
+  >
+<div>
+    <h1 class="heading">
+        contact form 
+    </h1>
+</div>
+    <div class="form-group">
+        <label for="name" class="header" class="form-label">Your Name:</label>
+        <input id="name" type="text" required placeholder="Full name" name="name" class="form-input" >
+    </div>
+
+    <div class="form-group">
+        <label for="email" class="header" class="form-label">Your Email:</label>
+        <input type="email" name="email" id="email" required placeholder="example@mail.com" class="form-input" >
+    </div>
+
+    <div class="form-group">
+        <label for="contact" class="header" class="form-label">Your Number:</label>
+        <input id="contact" type="tel" name="contact" required placeholder="083 555 6789" min="10" max="10" class="form-input" >
+    </div>
+
+    <div class="form-group">
+        <label for="message" class="header" class="form-label">Your Message:</label>
+      <textarea class="form-input" name="message" id="name" placeholder="Type your message here..."></textarea>
+    </div>
+</div>
+
+<!-- your other form fields go here -->
+
+    <button type="submit" class="button">Send</button>
+</form>
+
+<div class="ball ball1"></div>
+<div class="ball ball2"></div>
+<div class="ball ball3"></div>
+<div class="ball ball4"></div>
+
+</body>
+</html>
