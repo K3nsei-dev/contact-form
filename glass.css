@@ -92,3 +92,64 @@ body{
     background: linear-gradient(145deg, #405561, #4c6574);
     box-shadow: 11px 11px 23px #3c505c, -11px, -11px, 23px #526c7c;
 }
+
+.ball {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /*   animation: spinny 3s linear infinite; */
+  }
+  
+  .ball1 {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: -1;
+    justify-self: flex-end;
+    margin-right: -40px;
+    animation: moveDown 3s linear infinite;
+  }
+  .ball2 {
+    grid-column: 3;
+    grid-row: 3;
+    z-index: -1;
+    margin-left: -40px;
+    animation: moveUp 4s linear infinite;
+  }
+  .ball3 {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: flex-end;
+    margin-right: -40px;
+    animation: moveUp 5s linear infinite;
+  }
+  .ball4 {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: -40px;
+    animation: moveDown 6s linear infinite;
+  }
+  
+  @keyframes moveDown {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 70vh);
+    }
+  }
+  
+  @keyframes moveUp {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, -70vh);
+    }
+  }
